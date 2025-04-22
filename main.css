@@ -411,9 +411,8 @@ body {
 }
 
 .site-branding {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+  width: 15rem;
+  height: 10rem;
 }
 
 .main-navigation {
@@ -422,12 +421,11 @@ body {
 }
 
 .site {
-  max-width: 1180px;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 2rem;
-  grid-template-areas: "header header header header header header header header header header header header" "content content content content content content content content content sidebar sidebar sidebar " "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  gap: 1rem;
+  grid-template-areas: "header header header header header header header header header" "content content content content content content sidebar sidebar sidebar" "content content content content content content sidebar sidebar sidebar" "footer footer footer footer footer footer footer footer footer";
 }
 
 .site-main {
@@ -438,6 +436,7 @@ body {
 .widget-area {
   grid-area: sidebar;
   padding: 2rem 0;
+  justify-items: end;
 }
 
 /*# sourceMappingURL=main.css.map */
