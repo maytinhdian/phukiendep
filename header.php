@@ -27,6 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<img src="http://phukiendiep.local/wp-content/uploads/2025/04/logo.svg" alt="Logo" class="logo">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
