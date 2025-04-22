@@ -1,0 +1,13 @@
+@use "../abstracts" ;
+.site{
+    max-width: abstracts.$max-width ;
+
+    display: grid ;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: auto ;
+    grid-gap: 2rem ;
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "sidebar sidebar sidebar content content content content content content content content content"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
