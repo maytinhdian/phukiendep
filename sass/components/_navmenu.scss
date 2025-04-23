@@ -1,14 +1,15 @@
-.main-navigation .menu {
+.main-navigation {
+  display: flex;
   li {
     list-style: none;
-    display: block;
-    float: left;
+    display: inline-block;
+    
     padding: 1rem;
     margin: 0.5rem;
     border-radius: 5px;
     font-size: 2rem;
   }
-  a{
+  a {
     display: block;
   }
 }
