@@ -3,32 +3,5 @@
 // -----------------------------------------------------------------------------
 .site-header {
   grid-area: header;
-
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: (4rem, 6rem) auto;
-  grid-template-areas:
-    "header-top-left header-top-mid header-top-right"
-    "site-branding main-navigation main-navigation";
-}
-.site-branding {
-  grid-area: site-branding;
-  width: 15rem;
-  height: 10rem;
-}
-.main-navigation {
-  grid-area: main-navigation;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.header-top {
-  padding: auto;
-  grid-area: header-top-mid;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  max-height: 10rem;
 }
