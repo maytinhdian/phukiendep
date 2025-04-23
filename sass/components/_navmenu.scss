@@ -1,6 +1,14 @@
-.nav-menu {
-  ul{
+.main-navigation .menu {
+  li {
     list-style: none;
-    background-color: $brand-color;
+    display: block;
+    float: left;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  a{
+    display: block;
   }
 }
