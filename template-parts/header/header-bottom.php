@@ -7,6 +7,9 @@
             array(
                 'theme_location' => 'menu-1',
                 'menu_id'        => 'primary-menu',
+                'menu_class'=> 'header-bottom__main-menu',
+                'before'=>'<h1>',
+                'after'=> '</h1>',
             )
         );
         ?>

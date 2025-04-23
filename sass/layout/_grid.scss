@@ -1,27 +1,19 @@
 @use "../abstracts";
 .site {
   display: grid;
-  grid-template-columns:
-    minmax(6rem, 1fr)
-    repeat(8, minmax(min-content, 16rem))
-    minmax(6rem, 1fr);
-
-  grid-template-rows: repeat(5, min-content);
+  grid-template-columns: repeat(3, minmax(0, 1fr)) 30rem;
+  grid-template-rows: 10rem repeat(3, minmax(0, 1fr));
   gap: 1rem;
   grid-template-areas:
-    
-    "header header header header header header header header header"
-    "content content content content content content sidebar sidebar sidebar"
-    "content content content content content content sidebar sidebar sidebar"
-    "footer footer footer footer footer footer footer footer footer";
+    "header header header header"
+    "content content content sidebar"
+    "content content content sidebar"
+    "footer footer footer footer";
 }
 
 .site-main {
   grid-area: content;
-  padding: 2rem 0;
 }
 .widget-area {
   grid-area: sidebar;
-  padding: 2rem 0;
-  justify-items: end;
 }

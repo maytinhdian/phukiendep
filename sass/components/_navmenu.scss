@@ -1,15 +1,22 @@
-.main-navigation {
-  display: flex;
-  li {
-    list-style: none;
-    display: inline-block;
+.header-bottom__main-menu {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  li{
+    margin: 0 1rem;
     
-    padding: 1rem;
-    margin: 0.5rem;
     border-radius: 5px;
-    font-size: 2rem;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: #e2e2e2;
+    }
   }
   a {
+    color: #a87272;
+    text-decoration: none;
     display: block;
   }
 }
