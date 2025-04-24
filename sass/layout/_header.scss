@@ -1,6 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use "../components";
+
 .site-header {
   max-height: 20rem;
   grid-area: header;
@@ -24,13 +26,19 @@
 }
 .header-bottom {
   grid-area: header-bottom;
-  display: flex;
-  flex-direction: row;
-
-  &__main-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    padding: 1rem;
+  @include components.nav-menu;
+}
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .header-bottom {
+    grid-area: header-bottom;
+    @include components.nav-menu;
+    background-color: blue;
+  }
+}
+@media (min-width: 900px) {
+  .header-bottom {
+    display: none;
   }
 }

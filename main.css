@@ -307,6 +307,38 @@ template {
   display: none;
 }
 
+@media (min-width: 576px) {
+  .responsive-test {
+    background-color: blue;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-test {
+    background: green;
+  }
+}
+@media (min-width: 992px) {
+  .responsive-test {
+    background: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-test {
+    background: orange;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-test {
+    background: purple;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-test {
+    background: pink;
+  }
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -325,18 +357,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-/**
- * Basic styles for links
- */
-a {
-  color: rgb(229, 0, 80);
-  text-decoration: none;
-}
-a:hover, a:active, a:focus, a:focus-within {
-  color: rgb(34, 34, 34);
-  text-decoration: underline;
 }
 
 /**
@@ -426,16 +446,62 @@ body {
 
 .header-bottom {
   grid-area: header-bottom;
-  display: flex;
-  flex-direction: row;
+  text-transform: uppercase;
 }
-.header-bottom__main-navigation {
+.header-bottom ul {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-  padding: 1rem;
+  justify-content: left;
+  list-style-type: none;
+}
+.header-bottom li {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease-in-out;
+}
+.header-bottom li:hover {
+  background-color: #e2e2e2;
+}
+.header-bottom a {
+  color: #a87272;
+  text-decoration: none;
+  display: block;
 }
 
+/* Using SCSS variables to store breakpoints */
+@media (min-width: 768px) {
+  .header-bottom {
+    grid-area: header-bottom;
+    text-transform: uppercase;
+    background-color: blue;
+  }
+  .header-bottom ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+  }
+  .header-bottom li {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .header-bottom li:hover {
+    background-color: #e2e2e2;
+  }
+  .header-bottom a {
+    color: #a87272;
+    text-decoration: none;
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .header-bottom {
+    display: none;
+  }
+}
 .site {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)) 30rem;
@@ -450,26 +516,6 @@ body {
 
 .widget-area {
   grid-area: sidebar;
-}
-
-.header-bottom__main-menu ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-.header-bottom__main-menu li {
-  margin: 0 1rem;
-  border-radius: 5px;
-  background-color: #f8f8f8;
-  transition: background-color 0.3s ease-in-out;
-}
-.header-bottom__main-menu li:hover {
-  background-color: #e2e2e2;
-}
-.header-bottom__main-menu a {
-  color: #a87272;
-  text-decoration: none;
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
