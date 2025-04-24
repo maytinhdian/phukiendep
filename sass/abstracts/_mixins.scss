@@ -44,26 +44,3 @@ $breakpoint: (
     @content;
   }
 }
-
-.responsive-test{
-
-  @include sm {
-    background-color: blue;
-    font-size: 2rem;
-  }   
-  @include md {
-    background: green;
-  }
-  @include lg {
-    background: yellow;
-  } 
-  @include xl {
-    background: orange;
-  }
-  @include xxl {
-    background: purple;
-  }
-  @include breakpoint(1400px) {
-    background: pink;
-  }
-}
