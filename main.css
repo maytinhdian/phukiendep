@@ -307,38 +307,6 @@ template {
   display: none;
 }
 
-@media (min-width: 576px) {
-  .responsive-test {
-    background-color: blue;
-    font-size: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .responsive-test {
-    background: green;
-  }
-}
-@media (min-width: 992px) {
-  .responsive-test {
-    background: yellow;
-  }
-}
-@media (min-width: 1200px) {
-  .responsive-test {
-    background: orange;
-  }
-}
-@media (min-width: 1400px) {
-  .responsive-test {
-    background: purple;
-  }
-}
-@media (min-width: 1400px) {
-  .responsive-test {
-    background: pink;
-  }
-}
-
 /**
  * Set up a decent box model on the root element
  */
@@ -359,6 +327,12 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "Coiny";
+  src: url("http://phukiendiep.local/wp-content/themes/phukiendep/assets/fonts/coiny-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * Clear inner floats
  */
@@ -419,12 +393,14 @@ body {
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.site-footer {
-  grid-area: footer;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Coiny", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .site-header {
-  max-height: 20rem;
+  max-height: 10% vh;
   grid-area: header;
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -436,7 +412,11 @@ body {
 .header-top {
   grid-area: header-top;
   display: flex;
-  flex-direction: row;
+}
+@media (max-width: 992px) {
+  .header-top {
+    background-color: aqua;
+  }
 }
 
 .header-main {
@@ -468,46 +448,23 @@ body {
   text-decoration: none;
   display: block;
 }
-
-/* Using SCSS variables to store breakpoints */
-@media (min-width: 768px) {
-  .header-bottom {
-    grid-area: header-bottom;
-    text-transform: uppercase;
-    background-color: blue;
-  }
-  .header-bottom ul {
-    display: flex;
-    justify-content: left;
-    list-style-type: none;
-  }
-  .header-bottom li {
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-    transition: background-color 0.3s ease-in-out;
-  }
-  .header-bottom li:hover {
-    background-color: #e2e2e2;
-  }
-  .header-bottom a {
-    color: #a87272;
-    text-decoration: none;
-    display: block;
-  }
-}
-@media (min-width: 900px) {
+@media (max-width: 992px) {
   .header-bottom {
     display: none;
   }
 }
-.site {
+
+.main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) 30rem;
-  grid-template-rows: 10rem repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr)) 30%;
+  grid-template-rows: 15% repeat(2, minmax(40%, 1fr)) 10%;
   gap: 1rem;
-  grid-template-areas: "header header header header" "content content content sidebar" "content content content sidebar" "footer footer footer footer";
+  grid-template-areas: "header header header" "content content sidebar" "content content sidebar" "footer footer footer";
 }
 
 .site-main {
@@ -516,6 +473,15 @@ body {
 
 .widget-area {
   grid-area: sidebar;
+}
+@media (max-width: 768px) {
+  .widget-area {
+    display: none;
+  }
+}
+
+.site-footer {
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=main.css.map */
