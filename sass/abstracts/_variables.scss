@@ -12,25 +12,20 @@ $text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
 $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
   "Monaco", monospace !default;
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
+// $fa-font-path: "../assets/fonts/webfonts/";
 
-/// Main brand color
+///Theme Color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$theme-color: (
+  "primary-color": rgb(235, 208, 61, 92),
+  "secondary-color": rgb(75, 61, 235, 92),
+  "accent-color": rgb(235, 77, 61, 92),
+  "text-color": rgb(0, 0, 0),
+  "background-color": rgb(81, 107, 93, 42),
+  "border-color": rgb(61, 235, 142, 92),
+  "link-color": rgb(84, 89, 150, 59),
+) !default;
 
 /// Container's maximum width
 /// @type Length

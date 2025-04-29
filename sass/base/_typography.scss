@@ -4,9 +4,9 @@
  */
 
 @use '../abstracts';
-
+@use "sass:map";
 body {
-  color: abstracts.$text-color;
+  color: map.get(abstracts.$theme-color,"text-color");
   font: normal 125% / 1.4 abstracts.$text-font-stack;
 }
 
