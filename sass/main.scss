@@ -16,10 +16,15 @@
 
 // 4. Components
 @use 'components/button';
-@use 'components/navmenu';
+@use 'components/navbar';
 
 // 5. Pages
 @use 'pages/home';
+@use 'pages/product-list';
 
 // 6. Themes
 @use 'themes/default';
+
+
+// 7. Vendors
+@use 'vendors/fontawesome/fontawesome.scss';

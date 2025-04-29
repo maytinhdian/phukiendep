@@ -2,13 +2,17 @@
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
 
-/// Native `url(..)` function wrapper
-/// @param {String} $base - base URL for the asset
-/// @param {String} $type - asset type folder (e.g. `fonts/`)
-/// @param {String} $path - asset path
-/// @return {Url}
-/// 
-@function asset($base, $type, $path) {
-  @return url($base + $type + $path);
-}
+/// Base path for assets (fonts, images...),
+/// should not include trailing slash
+/// @access public
+/// @type String
+$asset-base-path: "http://phukiendiep.local/wp-content/themes/phukiendep" !default;
 
+/// Asset URL builder
+/// @access private
+/// @param {String} $type - Asset type, matching folder name
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the asset
+@function asset($type, $file) {
+  @return url($asset-base-path + "/" + $type + "/" + $file);
+}
