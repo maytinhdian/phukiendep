@@ -3,8 +3,13 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2024 Fonticons, Inc.
  */
+<<<<<<< HEAD
 @use 'functions';
 @use 'variables' as * ;
+=======
+@import 'functions';
+@import 'variables';
+>>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 
 :root, :host {
   --#{$fa-css-prefix}-style-family-classic: '#{ $fa-style-family }';

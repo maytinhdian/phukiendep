@@ -5,6 +5,10 @@
 @use "../abstracts" as *;
 
 .site-header {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
   grid-area: header;
   display: grid;
   grid-template-rows: 5rem 5rem 5rem;
@@ -31,9 +35,14 @@
   }
 }
 .site-branding__logo {
+<<<<<<< HEAD
   height: 9rem;
   display: flex;
   flex-direction: column;
+=======
+  height: 90px;
+  background-color: aqua;
+>>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 }
 
 .header-bottom {
