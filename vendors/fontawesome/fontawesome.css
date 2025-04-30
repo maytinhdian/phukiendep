@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -8281,23 +8280,3 @@ readers do not read off random characters that represent icons */
 }
 
 /*# sourceMappingURL=fontawesome.css.map */
-=======
-/* Error: Undefined operation "fa-divide(20em, 16) * 2".
- *    ,
- * 50 | $fa-stack-width           : ($fa-fw-width * 2) !default;
- *    |                              ^^^^^^^^^^^^^^^^
- *    '
- *   sass\vendors\fontawesome\_variables.scss 50:30  @use
- *   sass\vendors\fontawesome\fontawesome.scss 10:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Undefined operation "fa-divide(20em, 16) * 2".\a    \2577 \a 50 \2502  $fa-stack-width           : ($fa-fw-width * 2) !default;\a    \2502                               ^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\vendors\\fontawesome\\_variables.scss 50:30  @use\a   sass\\vendors\\fontawesome\\fontawesome.scss 10:1  root stylesheet';
-}
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45

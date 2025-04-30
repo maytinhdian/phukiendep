@@ -1,12 +1,9 @@
 // animating icons
 // --------------------------
-<<<<<<< HEAD
 @use "variables" as *;
 @use "mixins" as *;
 @use "functions" as *;
 
-=======
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 
 .#{$fa-css-prefix}-beat {
   animation-name: #{$fa-css-prefix}-beat;

@@ -2,13 +2,10 @@
 // -------------------------
 
 // only display content to screen readers
-<<<<<<< HEAD
 @use  "functions" as *;
 @use  "variables" as *;
 @use  "mixins" as *;
 
-=======
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 .sr-only,
 .#{$fa-css-prefix}-sr-only {
   @include fa-sr-only;

@@ -2,13 +2,10 @@
 // --------------------------
 
 // base rendering for an icon
-<<<<<<< HEAD
 
 @use "variables" as *;
 @use "functions" as *;
 
-=======
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 @mixin fa-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,9 +1,10 @@
-/* Error: expected "{".
- *    ,
- * 10 | @use 'functions';
- *    |                 ^
- *    '
- *   sass\vendors\fontawesome\v4-shims.scss 10:17  root stylesheet */
+/* Error: Undefined variable.
+ *   ,
+ * 5 | .#{$fa-css-prefix}.#{$fa-css-prefix}-glass { #{$fa-icon-property}: string.unquote("\"#{ $fa-var-martini-glass-empty }\""); }
+ *   |    ^^^^^^^^^^^^^^
+ *   '
+ *   sass\vendors\fontawesome\_shims.scss 5:4     @use
+ *   sass\vendors\fontawesome\v4-shims.scss 11:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a    \2577 \a 10 \2502  @use 'functions';\d\a    \2502                  ^\a    \2575 \a   sass\\vendors\\fontawesome\\v4-shims.scss 10:17  root stylesheet";
+  content: 'Error: Undefined variable.\a   \2577 \a 5 \2502  .#{$fa-css-prefix}.#{$fa-css-prefix}-glass { #{$fa-icon-property}: string.unquote("\\"#{ $fa-var-martini-glass-empty }\\""); }\d\a   \2502     ^^^^^^^^^^^^^^\a   \2575 \a   sass\\vendors\\fontawesome\\_shims.scss 5:4     @use\a   sass\\vendors\\fontawesome\\v4-shims.scss 11:1  root stylesheet';
 }

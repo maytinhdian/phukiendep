@@ -3,7 +3,6 @@
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
-<<<<<<< HEAD
 @use "functions" as *;
 @use "variables" as *;
 @use "mixins" as *;
@@ -14,12 +13,3 @@ readers do not read off random characters that represent icons */
     #{$fa-icon-property}: string.unquote('"#{ $icon }"');
   }
 }
-=======
-
-@each $name, $icon in $fa-icons {
-  .#{$fa-css-prefix}-#{$name} {
-    #{$fa-icon-property}: unquote("\"#{ $icon }\"");
-  }
-}
-
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45

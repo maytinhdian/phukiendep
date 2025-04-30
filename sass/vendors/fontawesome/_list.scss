@@ -1,15 +1,11 @@
 // icons in a list
 // -------------------------
-<<<<<<< HEAD
 @use "variables" as *;
 @use "mixins" as *;
 @use "functions" as *;
 @use "sizing" as *;
 @use "fixed-width" as *;
 @use "bordered-pulled" as *;
-=======
-
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 .#{$fa-css-prefix}-ul {
   list-style-type: none;
   margin-left: var(--#{$fa-css-prefix}-li-margin, #{$fa-li-margin});

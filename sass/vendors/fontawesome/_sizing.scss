@@ -2,13 +2,10 @@
 // -------------------------
 
 // literal magnification scale
-<<<<<<< HEAD
 @use "variables" as *;
 @use "mixins" ;
 
 
-=======
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
 @for $i from 1 through 10 {
   .#{$fa-css-prefix}-#{$i}x {
     font-size: $i * 1em;
@@ -18,10 +15,6 @@
 // step-based scale (with alignment)
 @each $size, $value in $fa-sizes {
   .#{$fa-css-prefix}-#{$size} {
-<<<<<<< HEAD
      @include mixins.fa-size($value);
-=======
-     @include fa-size($value);
->>>>>>> e60296939031ca1538fbbc63ea076b1fdcb81a45
   }
 }
